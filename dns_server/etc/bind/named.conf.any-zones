@@ -1,0 +1,55 @@
+//recursion yes;
+zone "tv5.com"{
+  type master;
+  file "/etc/bind/tv5.com";
+};
+zone "tv6.com"{
+  type master;
+  file "/etc/bind/tv6.com";
+};
+zone "tv7.com"{
+  type master;
+  file "/etc/bind/tv7.com";
+};
+
+//replay servers.
+zone "replay5.com"{
+  type master;
+  file "/etc/bind/replay5.com";
+};
+zone "replay6.com"{
+  type master;
+  file "/etc/bind/replay6.com";
+};
+zone "replay7.com"{
+  type master;
+  file "/etc/bind/replay7.com";
+};
+
+//news.com
+zone "news5.com"{
+  type master;
+  file "/etc/bind/news5.com";
+};
+zone "news6.com"{
+  type master;
+  file "/etc/bind/news6.com";
+};
+zone "news7.com"{
+  type master;
+  file "/etc/bind/news7.com";
+};
+
+//newspc.com
+zone "newspc5.com"{
+  type master;
+  file "/etc/bind/newspc5.com";
+};
+zone "newspc6.com"{
+  type master;
+  file "/etc/bind/newspc6.com";
+};
+zone "newspc7.com"{
+  type master;
+  file "/etc/bind/newspc7.com";
+};
