@@ -62,6 +62,10 @@ view "Num-5-view"{
 		type master;
 		file "/etc/bind/tv5.com";
 	};
+	zone "vod.com"{
+		type master;
+		file "/etc/bind/tv5.com";
+	};
 	include "/etc/bind/named.conf.any-zones";
 
 };
@@ -87,6 +91,10 @@ view "Num-6-view"{
 		type master;
 		file "/etc/bind/tv6.com";
 	};
+	zone "vod.com"{
+		type master;
+		file "/etc/bind/tv6.com";
+	};
 	include "/etc/bind/named.conf.any-zones";
 
 };
@@ -109,6 +117,10 @@ view "Num-7-view"{
 		file "/etc/bind/tv7.com";
 	};
 	zone "newspc.com"{
+		type master;
+		file "/etc/bind/tv7.com";
+	};
+	zone "vod.com"{
 		type master;
 		file "/etc/bind/tv7.com";
 	};

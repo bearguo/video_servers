@@ -53,3 +53,17 @@ zone "newspc7.com"{
   type master;
   file "/etc/bind/newspc7.com";
 };
+
+//vod.com
+zone "vod5.com"{
+  type master;
+  file "/etc/bind/vod5.com";
+};
+zone "vod6.com"{
+  type master;
+  file "/etc/bind/vod6.com";
+};
+zone "vod7.com"{
+  type master;
+  file "/etc/bind/vod7.com";
+};
