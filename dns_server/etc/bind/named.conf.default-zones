@@ -27,6 +27,18 @@
 //	file "/etc/bind/db.255";
 //};
 
+acl "Num1" {
+	10.1.0.0/16;
+};
+acl "Num2" {
+	10.2.0.0/16;
+};
+acl "Num3" {
+	10.3.0.0/16;
+};
+acl "Num4" {
+	10.4.0.0/16;
+};
 
 
 acl "Num5" {
@@ -44,6 +56,8 @@ acl "Num7" {
 view "Num-5-view"{
 	match-clients{
 		Num5;
+		Num1;
+		Num2;
 	};
 	recursion no;
 	zone "replay.com"{
@@ -73,6 +87,7 @@ view "Num-5-view"{
 view "Num-6-view"{
 	match-clients{
 		Num6;
+		Num4;
 	};
 	recursion no;
 	zone "replay.com"{
@@ -102,6 +117,7 @@ view "Num-6-view"{
 view "Num-7-view"{
 	match-clients{
 		Num7;
+		Num3;
 	};
 	recursion no;
 	zone "replay.com"{
