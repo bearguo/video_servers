@@ -11,6 +11,7 @@ logrotate是Linux提供的自带日志转储工具，默认配置为每天运行
 下面是SRS的日志转储配置：
 ```shell
 /usr/local/srs/objs/srs.log {
+    su root root
     rotate 7
     missingok
     daily
