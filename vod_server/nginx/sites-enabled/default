@@ -47,6 +47,8 @@ server {
     }
 
     location /media/ {
+        mp4;
+	limit_rate 1024k;
         alias /home/share/Django-vod/media/;
     }
 	location / {
