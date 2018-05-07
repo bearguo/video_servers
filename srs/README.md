@@ -17,7 +17,7 @@ $ ulimit -a #查看是否更改成功
 ```bash
 $ vim /etc/fstab #打开磁盘挂载配置文件
 # 加入一行：
-tmpfs  /usr/local/srs/objs/nginx/html/live  tmpfs  defaults,size=2G,mode=075   0  0
+tmpfs  /usr/local/srs/objs/nginx/html/live  tmpfs  defaults,size=2G,mode=0755   0  0
 
 $ mount -a -f -v #模拟执行挂载新的配置文件，确保没有配置错误
 $ mount -a #执行挂载新的配置文件
